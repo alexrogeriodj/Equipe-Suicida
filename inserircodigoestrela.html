@@ -1,0 +1,25 @@
+<b:include name='feedLinks'/>
+<b:if cond='data:top.showStars'> 
+<script src='http://www.google.com/jsapi' type='text/javascript'/> 
+<script type='text/javascript'> 
+google.load("annotations", "1"); 
+function initialize() { 
+google.annotations.setApplicationId(<data:top.blogspotReviews/>); 
+google.annotations.createAll(); 
+google.annotations.fetch(); 
+}  
+google.setOnLoadCallback(initialize); 
+</script> 
+</b:if>
+<div class='post-footer-line post-footer-line-3'>
+<span class='star-ratings'> 
+<b:if cond='data:top.showStars'> 
+<div expr:g:background-color='data:backgroundColor' 
+expr:g:text-color='data:textColor' 
+expr:g:url='data:post.absoluteUrl' 
+g:height='42' 
+g:type='RatingPanel' 
+g:width='180'> 
+</div> 
+</b:if> 
+</span>
