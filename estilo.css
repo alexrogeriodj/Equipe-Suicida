@@ -1,0 +1,89 @@
+.estrelas input[type=radio] {
+  display: none;
+  
+}
+.estrelas label i.fa:before {
+  content:'\f005';
+  color: #FC0;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+  color: #CCC;
+}
+
+.voto input[type=radio] {
+  display: none;
+  
+}
+.voto label i.fb:before {
+  content:'\f005';
+  color: #FC0;
+}
+.voto input[type=radio]:checked ~ label i.fb:before {
+  color: #CCC;
+}
+
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+}
+img{
+	float:left;
+	margin : 0 0 10px 10px;
+	
+}
+div.container{
+width : 100%;
+border : 1px solid gray;
+
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted white;
+	float: left;
+	
+	
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+	
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

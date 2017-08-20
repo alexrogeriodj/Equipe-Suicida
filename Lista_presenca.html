@@ -2,12 +2,19 @@
 <html>
 <head>
 <link rel="stylesheet" href="estilo.css">
+
 <title>
 LISTA DE PRESENCA
 </title>
 </head>
-<body style="background-color : Darkgray">
+<body style="background-color :LightSlateGray">
 <h3 align="center">Lista de Alunos</h3>
+<div class="navbar">
+  <a href="#home">Moodle</a>
+  <a href="#news">Alunos</a>
+  <a href="#contact">Professores</a>
+  <a href="#about">Alertas</a>
+</div>
 <table border="1" width="1250px">
 <tr>
 <th>
@@ -25,39 +32,93 @@ INFO
 </tr>
 <tr> 
 <th> 
+<div class="tooltip" >
 <img src="avatar.jpg">
-Fabio Lima
+<span class ="tooltiptext">
+<img src="avatar.jpg">
+</span>
+</div>
+<p align="center">Fabio Lima
 </th>
 <th>
 <input type="checkbox" name ="presenca"  value="">
 </th>
-<th>
-<div class="estrelas">
-  <input type="radio" id="cm_star-empty" name="st" value="" checked / >
+<th align="center">
+  <div class="estrelas">
+  
+  <input type="radio" id="cm_star-empty" name="st" value="" checked="checked" / >
   <label for="cm_star-1" > <i class="fa"></i></label>
-  <input type="radio" id="cm_star-1"  name="st" value="1"/>
+  <input type="radio" id="cm_star-1"  name="st" value="1" checked="checked"/>
   <label for="cm_star-2" ><i class="fa" ></i></label>
-  <input type="radio" id="cm_star-2" name="st" value="2"/>
+  <input type="radio" id="cm_star-2" name="st" value="2" checked="checked"/>
   <label for="cm_star-3"><i class="fa"></i></label>
-  <input type="radio" id="cm_star-3" name="st" value="3"/>
+  <input type="radio" id="cm_star-3" name="st" value="3" checked="checked"/>
   <label for="cm_star-4"><i class="fa"></i></label>
-  <input type="radio" id="cm_star-4" name="st" value="4"/>
+  <input type="radio" id="cm_star-4" name="st" value="4" checked="checked"/>
   <label for="cm_star-5"><i class="fa"></i></label>
-  <input type="radio" id="cm_star-5" name="st" value="5"/>
+  <input type="radio" id="cm_star-5" name="st" value="5" checked="checked"/>
 </div>
+</th>
+<th>
+<label type="radio" id="info" value="">
+<div class="tooltip">
+<img src="dialogo.png">
+ <span class="tooltiptext"><textarea rows ="5" cols="10" style="border: none;"></textarea> </span>
+ </div>
 </th>
 </tr>
 <tr>
 <th>
+<div class="tooltip" >
 <img src="avatar.jpg">
-Fabio Lima
+<span class ="tooltiptext">
+<img src="avatar.jpg">
+</span>
+</div>
+<p align="center">Rafael Vermelho
+</th>
+<th>
+<input type="checkbox" name ="presenca" value="">
+</th>
+<th>
+<div class="voto">
+  <input type="radio" id="cm_star-empty" name="st" value="" / >
+  <label for="cm_star-1" > <i class="fb"></i></label>
+  <input type="radio" id="star-1"  name="st" value="1" />
+  <label for="star-2" ><i class="fb" ></i></label>
+  <input type="radio" id="star-2" name="st" value="2" />
+  <label for="star-3"><i class="fb"></i></label>
+  <input type="radio" id="-3" name="st" value="3" />
+  <label for="star-4"><i class="fb"></i></label>
+  <input type="radio" id="star-4" name="st" value="4" />
+  <label for="star-5"><i class="fb"></i></label>
+  <input type="radio" id="cm_star-5" name="st" value="5" />
+</div>
+</th>
+<th>
+<label type="radio" id="info" value="">
+<div class="tooltip">
+<img src="dialogo.png">
+ <span class="tooltiptext"><textarea rows ="5" cols="10" style="border: none;"></textarea></span>
+ </div>
+</th>
+</tr>
+<tr>
+<th>
+<div class="tooltip" >
+<img src="avatar.jpg">
+<span class ="tooltiptext">
+<img src="avatar.jpg">
+</span>
+</div>
+<p align="center">Rodrigo Pacheco
 </th>
 <th>
 <input type="checkbox" name ="presenca" value="">
 </th>
 <th>
 <div class="estrelas">
-  <input type="radio" id="cm_star-empty" name="st" value="" checked / >
+  <input type="radio" id="cm_star-empty" name="st" value=""  / >
   <label for="cm_star-1" > <i class="fa"></i></label>
   <input type="radio" id="cm_star-1"  name="st" value="1"/>
   <label for="cm_star-2" ><i class="fa" ></i></label>
@@ -70,18 +131,30 @@ Fabio Lima
   <input type="radio" id="cm_star-5" name="st" value="5"/>
 </div>
 </th>
+<th>
+<label type="radio" id="info" value="">
+<div class="tooltip">
+<img src="dialogo.png">
+ <span class="tooltiptext"><textarea rows ="5" cols="10" style="border: none;"></textarea></span>
+ </div>
+</th>
 </tr>
 <tr>
 <th>
+<div class="tooltip" >
 <img src="avatar.jpg">
-Fabio Lima
+<span class ="tooltiptext">
+<img src="avatar.jpg">
+</span>
+</div>
+<p align="center">Luis Henrique
 </th>
 <th>
 <input type="checkbox" name ="presenca" value="">
 </th>
 <th>
 <div class="estrelas">
-  <input type="radio" id="cm_star-empty" name="st" value="" checked / >
+  <input type="radio" id="cm_star-empty" name="st" value=""  / >
   <label for="cm_star-1" > <i class="fa"></i></label>
   <input type="radio" id="cm_star-1"  name="st" value="1"/>
   <label for="cm_star-2" ><i class="fa" ></i></label>
@@ -94,22 +167,107 @@ Fabio Lima
   <input type="radio" id="cm_star-5" name="st" value="5"/>
 </div>
 </th>
+<th>
+<label type="radio" id="info" value="">
+<div class="tooltip">
+<img src="dialogo.png">
+ <span class="tooltiptext"><textarea rows ="5" cols="10" style="border: none;"></textarea></span>
+ </div>
+</th>
+</tr>
+<tr>
+<th>
+<div class="tooltip" >
+<img src="avatar.jpg">
+<span class ="tooltiptext">
+<img src="avatar.jpg">
+</span>
+</div>
+<p align="center">Alex Rogerio
+</th>
+<th>
+<input type="checkbox" name ="presenca" value="">
+</th>
+<th>
+<div class="estrelas">
+  <input type="radio" id="cm_star-empty" name="st" value=""  / >
+  <label for="cm_star-1" > <i class="fa"></i></label>
+  <input type="radio" id="cm_star-1"  name="st" value="1"/>
+  <label for="cm_star-2" ><i class="fa" ></i></label>
+  <input type="radio" id="cm_star-2" name="st" value="2"/>
+  <label for="cm_star-3"><i class="fa"></i></label>
+  <input type="radio" id="cm_star-3" name="st" value="3"/>
+  <label for="cm_star-4"><i class="fa"></i></label>
+  <input type="radio" id="cm_star-4" name="st" value="4"/>
+  <label for="cm_star-5"><i class="fa"></i></label>
+  <input type="radio" id="cm_star-5" name="st" value="5"/>
+</div>
+</th>
+<th>
+<label type="radio" id="info" value="">
+<div class="tooltip">
+<img src="dialogo.png">
+ <span class="tooltiptext"><textarea rows ="5" cols="10" style="border: none;"></textarea></span>
+ </div>
+</th>
+</tr>
+<tr>
+<th>
+<div class="tooltip" >
+<img src="avatar.jpg">
+<span class ="tooltiptext">
+<img src="avatar.jpg">
+</span>
+</div>
+<p align="center">Joao Franciso
+</th>
+<th>
+<input type="checkbox" name ="presenca" value="">
+</th>
+<th>
+<div class="estrelas">
+  <input type="radio" id="cm_star-empty" name="st" value=""  / >
+  <label for="cm_star-1" > <i class="fa"></i></label>
+  <input type="radio" id="cm_star-1"  name="st" value="1"/>
+  <label for="cm_star-2" ><i class="fa" ></i></label>
+  <input type="radio" id="cm_star-2" name="st" value="2"/>
+  <label for="cm_star-3"><i class="fa"></i></label>
+  <input type="radio" id="cm_star-3" name="st" value="3"/>
+  <label for="cm_star-4"><i class="fa"></i></label>
+  <input type="radio" id="cm_star-4" name="st" value="4"/>
+  <label for="cm_star-5"><i class="fa"></i></label>
+  <input type="radio" id="cm_star-5" name="st" value="5"/>
+</div>
+</th>
+<th>
+<label type="radio" id="info" value="">
+<div class="tooltip">
+<img src="dialogo.png">
+ <span class="tooltiptext"><textarea rows ="5" cols="10" style="border: none;"></textarea></span>
+ </div>
+</th>
+</tr>
+<tr>
+<th>
 
-</tr>
-<tr>
-<th>
+<div class="tooltip" >
 <img src="avatar.jpg">
-Fabio Lima
+<span class ="tooltiptext">
+<img src="avatar.jpg">
+</span>
+</div>
+<p align="center">Lucas Lima
 </th>
 <th>
 <input type="checkbox" name ="presenca" value="">
 </th>
 <th>
 <div class="estrelas">
-  <input type="radio" id="cm_star-empty" name="st" value="" checked / >
+  <input type="radio" id="cm_star-empty" name="st" value=""/> 
   <label for="cm_star-1" > <i class="fa"></i></label>
   <input type="radio" id="cm_star-1"  name="st" value="1"/>
-  <label for="cm_star-2" ><i class="fa" ></i></label>
+   
+  <label for="cm_star-2" ><i class="fa"></i></label>
   <input type="radio" id="cm_star-2" name="st" value="2"/>
   <label for="cm_star-3"><i class="fa"></i></label>
   <input type="radio" id="cm_star-3" name="st" value="3"/>
@@ -119,91 +277,21 @@ Fabio Lima
   <input type="radio" id="cm_star-5" name="st" value="5"/>
 </div>
 </th>
-
-</tr>
-<tr>
 <th>
-<img src="avatar.jpg">
-Fabio Lima
+<label type="radio" id="info" value="">
+<div class="tooltip">
+<img src="dialogo.png" /> 	
+ <span class="tooltiptext"><textarea rows ="5" cols="10" style="border: none";> </textarea></span>
+ </div>
 </th>
-<th>
-<input type="checkbox" name ="presenca" value="">
-</th>
-<th>
-<div class="estrelas">
-  <input type="radio" id="cm_star-empty" name="st" value="" checked / >
-  <label for="cm_star-1" > <i class="fa"></i></label>
-  <input type="radio" id="cm_star-1"  name="st" value="1"/>
-  <label for="cm_star-2" ><i class="fa" ></i></label>
-  <input type="radio" id="cm_star-2" name="st" value="2"/>
-  <label for="cm_star-3"><i class="fa"></i></label>
-  <input type="radio" id="cm_star-3" name="st" value="3"/>
-  <label for="cm_star-4"><i class="fa"></i></label>
-  <input type="radio" id="cm_star-4" name="st" value="4"/>
-  <label for="cm_star-5"><i class="fa"></i></label>
-  <input type="radio" id="cm_star-5" name="st" value="5"/>
-</div>
-</th>
-
-</tr>
-<tr>
-<th>
-<img src="avatar.jpg">
-Fabio Lima
-</th>
-<th>
-<input type="checkbox" name ="presenca" value="">
-</th>
-<th>
-<div class="estrelas">
-  <input type="radio" id="cm_star-empty" name="st" value="" checked / >
-  <label for="cm_star-1" > <i class="fa"></i></label>
-  <input type="radio" id="cm_star-1"  name="st" value="1"/>
-  <label for="cm_star-2" ><i class="fa" ></i></label>
-  <input type="radio" id="cm_star-2" name="st" value="2"/>
-  <label for="cm_star-3"><i class="fa"></i></label>
-  <input type="radio" id="cm_star-3" name="st" value="3"/>
-  <label for="cm_star-4"><i class="fa"></i></label>
-  <input type="radio" id="cm_star-4" name="st" value="4"/>
-  <label for="cm_star-5"><i class="fa"></i></label>
-  <input type="radio" id="cm_star-5" name="st" value="5"/>
-</div>
-</th>
-
-</tr>
-<tr>
-<th>
-<img src="avatar.jpg">
-Fabio Lima
-</th>
-<th>
-<input type="checkbox" name ="presenca" value="">
-</th>
-<th>
-<div class="estrelas">
-  <input type="radio" id="cm_star-empty" name="st" value="" checked / >
-  <label for="cm_star-1" > <i class="fa"></i></label>
-  <input type="radio" id="cm_star-1"  name="st" value="1"/>
-  <label for="cm_star-2" ><i class="fa" ></i></label>
-  <input type="radio" id="cm_star-2" name="st" value="2"/>
-  <label for="cm_star-3"><i class="fa"></i></label>
-  <input type="radio" id="cm_star-3" name="st" value="3"/>
-  <label for="cm_star-4"><i class="fa"></i></label>
-  <input type="radio" id="cm_star-4" name="st" value="4"/>
-  <label for="cm_star-5"><i class="fa"></i></label>
-  <input type="radio" id="cm_star-5" name="st" value="5"/>
-</div>
-</th>
-
 </tr>
 
 </div>
 </table>
-<div id="container">
-<div id="header"></div>
-<div id="mainnav"></div>
-<div id="menu"></div>
-<div id="contents"></div>
-<div id="footer"></div>
+
+<button type="button" id="salvar" value="">Salvar</button>
+<button type="button" id="salvar" value="">Sair</button>
+
+
 </body>
 </html>
